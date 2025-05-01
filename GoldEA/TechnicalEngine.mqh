@@ -150,7 +150,7 @@ namespace tech
       //if(!DetectFVG(PERIOD_H1)) return s;
       
       // Require current price to be within a liquidity zone
-      //if(!InLiquidityZone()) return s;
+      if(!InLiquidityZone()) return s;
       
       //if(!ConfirmMultiTF(PERIOD_H1)){return s;}
       
