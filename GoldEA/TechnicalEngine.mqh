@@ -152,7 +152,9 @@ namespace tech
       // Require current price to be within a liquidity zone
       //if(!InLiquidityZone()) return s;
       
-            // Additional filter: price proximity to recent extremes
+      //if(!ConfirmMultiTF(PERIOD_H1)){return s;}
+      
+      // Additional filter: price proximity to recent extremes
       const int rangeBars = 150; // lookback range in bars
       double highestHigh = iHigh(EA_SYMBOL, PERIOD_H1, 1);
       double lowestLow    = iLow(EA_SYMBOL, PERIOD_H1, 1);
